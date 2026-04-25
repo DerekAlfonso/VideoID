@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>x64</Platforms>
+    <AssemblyName>VideoID.Core</AssemblyName>
+    <RootNamespace>VideoID.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- OpenCV bindings with CUDA support -->
+    <PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
+    <PackageReference Include="Emgu.CV.runtime.windows.cuda" Version="4.9.0.5494" />
+    <!-- Lightweight embedded document database for face storage -->
+    <PackageReference Include="LiteDB" Version="5.0.21" />
+    <!-- Video/audio tag writing (ID3 + MP4/MKV metadata) -->
+    <PackageReference Include="TagLibSharp" Version="2.3.0" />
+    <!-- Async coordination -->
+    <PackageReference Include="System.Threading.Channels" Version="8.0.0" />
+    <!-- Logging -->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+## .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+TestResults/
+publish/
+
+## Model files (large binaries — download with scripts/Download-Models.ps1)
+models/*.caffemodel
+models/*.t7
+models/*.bin
+models/*.onnx
+
+## Database
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Rider
+.idea/
+*.sln.iml
